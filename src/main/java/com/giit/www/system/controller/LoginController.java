@@ -30,7 +30,7 @@ public class LoginController {
         String exceptionClassName = (String) req.getAttribute("shiroLoginFailure");
         String error = null;
         if (UnknownAccountException.class.getName().equals(exceptionClassName)) {
-            error = "用户名/密码错误---localhost1";
+            error = "用户名/密码错误---localhost";
         } else if (IncorrectCredentialsException.class.getName().equals(exceptionClassName)) {
             error = "用户名/密码错误---修改11";
         } else if (exceptionClassName != null) {
