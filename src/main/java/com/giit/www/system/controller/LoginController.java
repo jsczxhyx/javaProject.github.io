@@ -32,7 +32,7 @@ public class LoginController {
         if (UnknownAccountException.class.getName().equals(exceptionClassName)) {
             error = "用户名/密码错误---local";
         } else if (IncorrectCredentialsException.class.getName().equals(exceptionClassName)) {
-            error = "用户名/密码错误---又修改";
+            error = "用户名/密码错误---修改";
         } else if (exceptionClassName != null) {
             error = "其他错误：" + exceptionClassName;
         }
