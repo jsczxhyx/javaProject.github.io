@@ -37,7 +37,7 @@ public class LoginController {
             error = "其他错误：" + exceptionClassName;
         }
 
-        //TODO 这里以后可以把角色更换成资源控制后动态生成页面,（-->这里有疑问-->是不是可以使用自定义角色？shiro张开涛的16章有个自定义标签扫描出的角色）
+        //TODO ceshi这里以后可以把角色更换成资源控制后动态生成页面,（-->这里有疑问-->是不是可以使用自定义角色？shiro张开涛的16章有个自定义标签扫描出的角色）
         org.apache.shiro.subject.Subject subject = SecurityUtils.getSubject();
         boolean isAuthenticated = subject.isAuthenticated();
 
